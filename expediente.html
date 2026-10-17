@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expedientes de pacientes</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+    <CEnter>
+    <h1>Salud Integral</h1>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nutriologo.html">Nutriólogo</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="consejos.html">Consejos</a>
+        <a href="citas.html">Citas</a>
+        <a href="expediente.html">Expedientes</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <h2>Expedientes de pacientes</h2>
+
+    <p>
+        En esta sección se pueden registrar los datos básicos
+        de los pacientes de la clínica.
+    </p>
+
+    <h3>Registrar paciente</h3>
+
+    <form id="formulario">
+
+        <label>Nombre completo:</label>
+        <input type="text" id="nombre" required>
+
+        <br><br>
+
+        <label>Edad:</label>
+        <input type="number" id="edad" min="1" max="120" required>
+
+        <br><br>
+
+        <label>Fecha de consulta:</label>
+        <input type="date" id="fecha" required>
+
+        <br><br>
+
+        <label>Motivo de consulta:</label>
+        <select id="motivo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Orientación nutricional</option>
+            <option>Hábitos alimenticios</option>
+            <option>Seguimiento nutricional</option>
+            <option>Consulta general</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Registrar paciente</button>
+
+    </form>
+    </CEnter>
+</body>
+</html>
